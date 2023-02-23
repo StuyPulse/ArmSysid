@@ -34,7 +34,7 @@ public class VoltageWrist extends SubsystemBase implements Loggable {
 
         encoder.setInverted(true);
         wrist.setPeriodicFramePeriod(PeriodicFrame.kStatus5, 20);
-        wrist.setPeriodicFramePeriod(PeriodicFrame.kStatus6, 20);
+        // wrist.setPeriodicFramePeriod(PeriodicFrame.kStatus6, 20);
 
         WRIST_CONFIG.configure(wrist);
     }

@@ -37,7 +37,7 @@ public class VoltageShoulder extends SubsystemBase implements Loggable {
 
         encoder.setInverted(true);
         right.setPeriodicFramePeriod(PeriodicFrame.kStatus5, 20);
-        right.setPeriodicFramePeriod(PeriodicFrame.kStatus6, 20);
+        // right.setPeriodicFramePeriod(PeriodicFrame.kStatus6, 20);
 
         SHOULDER_LEFT_CONFIG.configure(left);
         SHOULDER_RIGHT_CONFIG.configure(right);
