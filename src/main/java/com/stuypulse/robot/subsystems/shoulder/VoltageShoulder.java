@@ -69,7 +69,7 @@ public class VoltageShoulder extends SubsystemBase implements Loggable {
     @Override
     public void periodic() {
         SmartDashboard.putNumber("Shoulder/Voltage", getVoltage());
-        SmartDashboard.putNumber("Shoulder/Radians", getPosition());
-        SmartDashboard.putNumber("Shoulder/Radians Per Second", getVelocity());
+        SmartDashboard.putNumber("Shoulder/Rotations", getPosition());
+        SmartDashboard.putNumber("Shoulder/Rotations Per Second", getVelocity());
     }
 }

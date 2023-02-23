@@ -55,8 +55,8 @@ public class SimVoltageShoulder extends SubsystemBase implements Loggable {
     @Override
     public void simulationPeriodic() {
         SmartDashboard.putNumber("Shoulder/Voltage", getVoltage());
-        SmartDashboard.putNumber("Shoulder/Radians", getPosition());
-        SmartDashboard.putNumber("Shoulder/Radians Per Second", getVelocity());
+        SmartDashboard.putNumber("Shoulder/Rotations", getPosition());
+        SmartDashboard.putNumber("Shoulder/Rotations Per Second", getVelocity());
 
         sim.setInput(voltage);
         sim.update(Settings.DT);

@@ -63,7 +63,7 @@ public class VoltageWrist extends SubsystemBase implements Loggable {
     @Override
     public void periodic() {
         SmartDashboard.putNumber("Wrist/Voltage", getVoltage());
-        SmartDashboard.putNumber("Wrist/Radians", getPosition());
-        SmartDashboard.putNumber("Wrist/Radians Per Second", getVelocity());
+        SmartDashboard.putNumber("Wrist/Rotations", getPosition());
+        SmartDashboard.putNumber("Wrist/Rotations Per Second", getVelocity());
     }
 }

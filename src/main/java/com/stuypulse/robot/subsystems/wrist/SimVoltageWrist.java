@@ -54,8 +54,8 @@ public class SimVoltageWrist extends SubsystemBase implements Loggable {
     @Override
     public void simulationPeriodic() {
         SmartDashboard.putNumber("Wrist/Voltage", getVoltage());
-        SmartDashboard.putNumber("Wrist/Radians", getPosition());
-        SmartDashboard.putNumber("Wrist/Radians Per Second", getVelocity());
+        SmartDashboard.putNumber("Wrist/Rotations", getPosition());
+        SmartDashboard.putNumber("Wrist/Rotations Per Second", getVelocity());
         
         sim.setInput(voltage);
         sim.update(Settings.DT);
